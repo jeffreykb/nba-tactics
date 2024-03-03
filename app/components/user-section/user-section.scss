@@ -1,0 +1,52 @@
+.user-section-main-container {
+  width: 300px;
+  height: 100%;
+  border: 1px solid lightgray;
+  margin: 0 20px;
+  padding: 10px;
+
+  .team-name-label {
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .energy-container {
+    margin-bottom: 20px;
+    .energy-label {
+      &.five {
+        color: green;
+      }
+      &.four {
+        color: lightgreen;
+      }
+      &.three {
+        color: yellow;
+      }
+      &.two {
+        color: orange;
+      }
+      &.one {
+        color: red;
+      }
+      &.zero {
+        color: maroon;
+      }
+    }
+  }
+
+  .roster-container {
+    .roster-label {
+      margin-bottom: 10px;
+    }
+
+    .roster-players {
+      .roster-player-name {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .energy-container {
+
+  }
+}
