@@ -69,7 +69,3 @@ export const useGenerateEnergy = () => {
     };
 };
 
-export const useTeamName = () => {
-  const [teamOne, setTeamOne] = useState("");
-  const [teamTwo, setTeamTwo] = useState("");
-};
