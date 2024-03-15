@@ -1,0 +1,43 @@
+.game-main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  .body-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .button-cta {
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(72, 101, 194);
+    color: white;
+    margin: 20px;
+
+    &:hover {
+      cursor: pointer;
+      opacity: 0.8;
+    }
+  }
+
+  .nba-tactics-header {
+    width: 100%;
+    font-size: 32px;
+    text-align: center;
+    margin: 20px 0 30px;
+    font-weight: 600;
+    color: rgb(55, 55, 162);
+  }
+
+  .game-body {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}

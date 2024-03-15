@@ -1,0 +1,9 @@
+.court-main-container {
+  display: flex;
+  flex-direction: column;
+
+  .court-row {
+    display: flex;
+    flex-direction: row;
+  }
+}
