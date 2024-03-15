@@ -6,8 +6,6 @@ export const UserSection = ({
   teamName,
   roster,
   energy,
-  handleGainEnergy,
-  handleSpendEnergy,
 }: UserSectionProps) => {
   const energyCSS: any = {
     5: "five",
@@ -29,7 +27,7 @@ export const UserSection = ({
       <div className="roster-container">
         <div className="roster-label">Roster</div>
         <div className="roster-players">
-          {roster.map((player) => {
+          {roster?.map((player) => {
             return (
               <div className="roster-player-name" key={player.name}>
                 {player.name}

@@ -3,6 +3,8 @@
   width: 75px;
   border: 1px solid black;
   font-size: 10px;
+  position: relative;
+  z-index: 0;
 
   &.hoop-one {
     background-color: rgb(66, 136, 216);
@@ -21,5 +23,15 @@
   }
   &.halfcourt {
     background-color: rgb(169, 197, 226);
+  }
+
+  &.offensive-default {
+    border: 1px solid red;
+    background-color: pink;
+  }
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.7;
   }
 }

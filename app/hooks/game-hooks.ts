@@ -5,6 +5,8 @@ import { COURT_ROWS, COURT_NUM_COLUMNS } from "@/app/data/court-data";
 
 export const useGenerateTiles = () => {
   const [tiles, setTiles] = useState({});
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalData, setModalData] = useState(null); 
 
   useEffect(() => {
     const newTiles: any = {};
@@ -29,7 +31,20 @@ export const useGenerateTiles = () => {
     setTiles(newTiles);
   }, []);
 
-  return { tiles };
+  const handleUpdateTile = (tileKey: string, body: any) => {
+    setTiles((prevTiles) => {
+      const newTiles = { ...prevTiles };
+      newTiles[tileKey[0]][tileKey[1]] = body;
+
+      return newTiles;
+    });
+  };
+
+  const handleTileModal = (tileKey: string) => {
+    
+  }
+
+  return { tiles, handleUpdateTile };
 };
 
 export const useGenerateEnergy = () => {

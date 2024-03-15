@@ -81,6 +81,9 @@ export const HALFCOURT = [
   "I8",
 ];
 
+export const OFFENSE_ONE_STARTER_TILE = ["A2", "I2", "A5", "I5", "E7"];
+export const OFFENSE_TWO_STARTER_TILE = ["A13", "I13", "A10", "I10", "E8"];
+
 export const COURT_TILE_TYPES = {
   HOOP_ONE: "hoop-one",
   HOOP_TWO: "hoop-two",

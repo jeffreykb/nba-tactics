@@ -1,5 +1,6 @@
 export interface CourtProps {
   tiles: CourtTileProps[];
+  handleUpdateTile: () => void;
 }
 
 export interface CourtTileProps {
@@ -9,6 +10,7 @@ export interface CourtTileProps {
 }
 
 export interface PlayerProps {
+  id: number;
   name: string;
   turnoverPercent: number;
   layupPercent: number;
@@ -29,6 +31,10 @@ export interface UserSectionProps {
   teamName: string;
   roster: PlayerProps[];
   energy: number;
-  handleGainEnergy: (user: string) => null | undefined;
-  handleSpendEnergy: (user: string, numEnergy: number) => null | undefined;
+  // handleGainEnergy: (user: string) => null | undefined;
+  // handleSpendEnergy: (user: string, numEnergy: number) => null | undefined;
+}
+
+export interface AnnouncerProps {
+  announcements: string[];
 }
